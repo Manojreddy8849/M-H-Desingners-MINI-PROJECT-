@@ -1,0 +1,73 @@
+footer{
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1.3em;
+}
+.footer-top-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.3em;
+    padding: 20px;
+}
+.footer-top-section>section{
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px 0px;
+}
+.title{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.title1{
+    font-weight: 600;
+    font-size: 1.8em;
+}
+.icon-container{
+    font-size: 1.2em;
+    display: flex;
+    gap: 10px;
+}
+.footer-bottom-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (min-width:700px) and (max-width:1100px){
+    .footer-top-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.3em;
+    }
+    .footer-top-section>section{
+        width: 40vw;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:700px){
+    .footer-top-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.3em;
+    }
+    .footer-top-section>section{
+        width: 100vw;
+        justify-content: center;
+    }
+    .fsection>span:not(.title1){
+        width: 60vw;
+    }
+    .title{
+        font-size: 1.1em;
+    }
+    .title1{
+        font-size: 1.2em;
+    }
+
+}
